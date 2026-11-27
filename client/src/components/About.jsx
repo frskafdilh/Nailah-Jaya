@@ -52,9 +52,10 @@ function Tentang() {
             
             <p>
               <span className="about-brand">NAILAH JAYA</span> merupakan
-              layanan kursus mengemudi yang berorientasi pada
-              pembentukan kemampuan berkendara secara baik dan
-              bertanggung jawab. Kami memandang bahwa keterampilan
+              layanan kursus mengemudi yang telah beroperasi selama kurang 
+              lebih 4 tahun dan sudah memiliki 3 cabang yang tersebar di kota
+              Medan. Kami berfokus pada pembentukan kemampuan berkendara secara
+              baik dan bertanggung jawab. Kami memandang bahwa keterampilan
               mengemudi tidak hanya berkaitan dengan penguasaan
               kendaraan, tetapi juga pemahaman terhadap aturan lalu
               lintas dan kesadaran akan keselamatan di jalan.

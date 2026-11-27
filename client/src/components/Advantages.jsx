@@ -1,42 +1,8 @@
-import {
-  MapPin,
-  CalendarCheck,
-  UsersRound,
-  CarFront,
-  CarTaxiFront,
-  FileCheck,
-  ShieldCheck,
-} from "lucide-react";
+import { UsersRound, CarFront, CarTaxiFront, FileCheck, ShieldCheck, } from "lucide-react";
 
 function Keunggulan() {
-  const startDate = new Date(2023, 2, 1);
-  const today = new Date();
-
-  const totalMonths =
-    (today.getFullYear() - startDate.getFullYear()) * 12 +
-    today.getMonth() -
-    startDate.getMonth();
-
-  const experienceYears = Math.max(
-    1,
-    Math.round(totalMonths / 12)
-  );
-
+  
   const features = [
-    {
-      icon: MapPin,
-      title: "03",
-      subtitle: "Cabang",
-      description: "Tiga lokasi layanan.",
-      type: "stat",
-    },
-    {
-      icon: CalendarCheck,
-      title: `± ${experienceYears}`,
-      subtitle: "Tahun Pengalaman",
-      description: "Berpengalaman melayani kursus mengemudi.",
-      type: "stat",
-    },
     {
       icon: UsersRound,
       title: "Instruktur",

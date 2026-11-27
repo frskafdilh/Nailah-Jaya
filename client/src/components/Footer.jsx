@@ -1,3 +1,4 @@
+
 import { MapPin, Phone, Clock3, ArrowUp, MessageCircle } from "lucide-react";
 import logo from "../assets/logo.png";
 
@@ -28,6 +29,44 @@ function Footer() {
               Hubungi Kami
               <span>→</span>
             </a>
+
+            <div className="footer-social">
+              <h4>Ikuti Kami</h4>
+
+              <div className="footer-social-links">
+                <a
+                  href="https://www.instagram.com/belajar_mengemudi_nailah_jaya/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram NAILAH JAYA"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://web.facebook.com/profile.php?id=61587403920114"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook NAILAH JAYA"
+                >
+                  <span className="facebook-icon">f</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="footer-links">
