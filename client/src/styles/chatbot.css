@@ -1,0 +1,251 @@
+
+/* =================================
+   CHATBOT NAILAH JAYA
+================================= */
+
+.chat-widget {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+
+/* Tombol pembuka chatbot */
+
+.chat-toggle-button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #efa66f, #df8955);
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+  box-shadow: 0 5px 18px rgba(38, 56, 88, 0.2);
+  transition: 0.3s ease;
+}
+
+.chat-toggle-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(38, 56, 88, 0.25);
+}
+
+/* Jendela chatbot */
+
+.chat-window {
+  position: absolute;
+  right: 0;
+  bottom: 75px;
+  width: 350px;
+  height: 480px;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 35px rgba(38, 56, 88, 0.18);
+  border: 1px solid #f0e5dc;
+}
+
+/* Header chatbot */
+
+.chat-header {
+  background: #293c60;
+  color: white;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.chat-header p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  color: #e6eaf2;
+}
+
+.chat-close-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Area percakapan */
+
+.chat-body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #ffffff;
+}
+
+/* Pesan chatbot */
+
+.chat-message {
+  display: flex;
+  width: 100%;
+}
+
+.chat-message-bot {
+  justify-content: flex-start;
+}
+
+.chat-message-user {
+  justify-content: flex-end;
+}
+
+.chat-message-bubble {
+  max-width: 82%;
+  padding: 11px 14px;
+  border-radius: 13px;
+  font-size: 13px;
+  line-height: 1.6;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+.chat-message-bot .chat-message-bubble {
+  background: #fff2e8;
+  color: #293c60;
+  border-bottom-left-radius: 3px;
+}
+
+.chat-message-user .chat-message-bubble {
+  background: #e99b64;
+  color: #ffffff;
+  border-bottom-right-radius: 3px;
+}
+
+/* Pertanyaan cepat */
+
+.chat-quick-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.chat-quick-question {
+  padding: 9px 13px;
+  border: 1px solid #f0d5c1;
+  border-radius: 20px;
+  background: white;
+  color: #293c60;
+  font-size: 11px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.chat-quick-question:hover {
+  background: #fff2e8;
+  border-color: #e99b64;
+}
+
+/* Area input pesan */
+
+.chat-input-area {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px;
+  border-top: 1px solid #f1ece8;
+  background: white;
+}
+
+.chat-input-area input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 14px;
+  border: 1px solid #e9e2dc;
+  border-radius: 25px;
+  outline: none;
+  color: #293c60;
+  font-size: 12px;
+}
+
+.chat-input-area input:focus {
+  border-color: #e99b64;
+}
+
+.chat-input-area input::placeholder {
+  color: #a6a6a6;
+}
+
+.chat-input-area button {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: #e99b64;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.chat-input-area button:hover {
+  background: #d9824d;
+}
+
+/* Tampilan layar HP */
+
+@media (max-width: 480px) {
+  .chat-widget {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .chat-window {
+    width: calc(100vw - 30px);
+    height: min(480px, 70dvh);
+    bottom: 70px;
+  }
+
+  .chat-toggle-button {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+
+/* Ikon robot chatbot */
+.chat-toggle-button {
+  background: #293c60;
+  border: 3px solid #496ba5;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.chat-toggle-button:hover {
+  background: #354e7b;
+  transform: scale(1.06);
+}
+
+.chat-robot-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
