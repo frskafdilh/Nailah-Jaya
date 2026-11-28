@@ -1,6 +1,3 @@
--- Data awal paket. Harga mengikuti tampilan frontend (Anggota 1).
--- CATATAN: konfirmasi ulang harga dengan mitra sebelum produksi.
-
 INSERT INTO packages (code, name, duration_days, price, description) VALUES
   ('A', 'Paket A', 3,  450000,  '3 hari, 1 jam per hari'),
   ('B', 'Paket B', 5,  650000,  '5 hari, 1 jam per hari'),

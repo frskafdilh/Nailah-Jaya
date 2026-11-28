@@ -1,6 +1,3 @@
--- Tabel dasar NAILAH JAYA (Anggota 3)
--- Dijalankan lebih dulu, sebelum operational-tables.sql milik Anggota 4
-
 CREATE TABLE IF NOT EXISTS users (
   id            SERIAL PRIMARY KEY,
   name          VARCHAR(100) NOT NULL,
